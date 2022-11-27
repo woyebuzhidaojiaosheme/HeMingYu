@@ -3,7 +3,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
  <HEAD>
-  <TITLE> 郑州科技学院 </TITLE>
+  <TITLE> 我喜欢你LXY </TITLE>
   <META NAME="Generator" CONTENT="EditPlus">
   <META NAME="Author" CONTENT="">
   <META NAME="Keywords" CONTENT="">
@@ -27,20 +27,41 @@ canvas {
   color: pink;
   top: 50%;}
 .top{
-  font-size: 80px;
+  text-indent:6ch;
+  font-size: 30px;
   text-align: center;
   color: pink;
+  margin: 0 auto;
   margin-top: 30px;
-
+  width:700px
 }
 
   </style>
  </HEAD>
 
  <BODY>
-  <div class="top">郑坑专属爱心</div>
-  <div class="font">Good Nigth</div>
+  <audio src="ballon.mp3" autoplay='autoplay' controls="controls" loop="loop"></audio>
+  <div class="top">
+   
+  </div>
+  <div class="font">L X Y</div>
   <canvas id="pinkboard"></canvas>
+  <script>
+    window.addEventListener('load',function(){ var box=document.querySelector(".top");
+    var a="我只是一个爱你的人我只想和你在一起,我喜欢你我并不是非要和你在一起而是要你以后在遇到困难遇到低谷期的时候知道曾经有一个人真诚且热烈的喜欢过你";
+    var i=0;
+   var timer= setInterval(function(){
+    if (i==a.length){
+        clearInterval(timer);
+    }
+    else{ if(a[i]=='n'){
+      a[i]='\n';
+    }
+      box.innerHTML=box.innerHTML+a[i];
+             i++;}
+    },300)})
+   
+  </script>
   <script>
   /*
  * Settings
